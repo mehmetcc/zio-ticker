@@ -6,6 +6,7 @@ ThisBuild / organizationName := "example"
 val ZioVersion       = "2.0.21"
 val ZioConfigVersion = "4.0.1"
 val ZioJsonVersion   = "0.6.2"
+val ZioHttpVersion   = "3.0.0-RC4"
 
 lazy val root = (project in file("."))
   .settings(
@@ -15,6 +16,7 @@ lazy val root = (project in file("."))
       "dev.zio"             %% "zio-config"          % ZioConfigVersion,
       "dev.zio"             %% "zio-config-typesafe" % ZioConfigVersion,
       "dev.zio"             %% "zio-config-magnolia" % ZioConfigVersion,
+      "dev.zio"             %% "zio-http"            % ZioHttpVersion,
       "com.github.javafaker" % "javafaker"           % "1.0.2",
       "dev.zio"             %% "zio-json"            % ZioJsonVersion,
       "dev.zio"             %% "zio-test"            % ZioVersion % Test,
