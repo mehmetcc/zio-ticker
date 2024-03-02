@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "d17f2e3a-67bc-4ee3-85f7-ac449760425d",
+		"name": "ticker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3332650"
+	},
+	"item": [
+		{
+			"name": "Get symbol",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/symbol/PDR",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"symbol",
+						"PDR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get symbols",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/symbol/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"symbol",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
