@@ -27,3 +27,9 @@ lazy val root = (project in file("."))
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
   )
+
+// scoverage
+coverageOutputHTML       := true
+coverageMinimumStmtTotal := 60
+coverageFailOnMinimum    := false
+coverageHighlighting     := true
