@@ -17,8 +17,10 @@ lazy val root = (project in file("."))
       "dev.zio"             %% "zio-config-typesafe" % ZioConfigVersion,
       "dev.zio"             %% "zio-config-magnolia" % ZioConfigVersion,
       "dev.zio"             %% "zio-http"            % ZioHttpVersion,
-      "com.github.javafaker" % "javafaker"           % "1.0.2",
       "dev.zio"             %% "zio-json"            % ZioJsonVersion,
+      "com.github.javafaker" % "javafaker"           % "1.0.2",
+      "io.getquill"         %% "quill-jdbc-zio"      % "4.8.1",
+      "org.postgresql"       % "postgresql"          % "42.7.1",
       "dev.zio"             %% "zio-test"            % ZioVersion % Test,
       "dev.zio"             %% "zio-test-sbt"        % ZioVersion % Test,
       "dev.zio"             %% "zio-test-magnolia"   % ZioVersion % Test

@@ -9,7 +9,7 @@ import zio._
 import zio.http._
 import zio.json._
 
-import java.time.Instant
+import java.time.ZonedDateTime
 
 object StockApp {
   val StockRoutes: HttpApp[GeneratedState] = Routes(getSymbol, getSymbols).toHttpApp
@@ -52,7 +52,7 @@ object StockApp {
   }
 
   object Models {
-    case class GetSymbolResponse(symbol: Symbol, price: Price, issuedAt: Instant)
+    case class GetSymbolResponse(symbol: Symbol, price: Price, issuedAt: ZonedDateTime)
 
     case class GetSymbolsResponse(symbols: List[GetSymbolResponse])
 

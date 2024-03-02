@@ -1,0 +1,10 @@
+CREATE DATABASE ticks;
+
+\c ticks
+
+CREATE TABLE stock (
+	stock_id SERIAL PRIMARY KEY,
+	symbol TEXT NOT NULL,
+	price DECIMAL(12,2) NOT NULL,
+	issued_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
